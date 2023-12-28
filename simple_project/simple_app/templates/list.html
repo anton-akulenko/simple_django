@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple app</title>
+</head>
+
+<body>
+    <h1>Items list</h1>
+    <ul>
+        {% for item in items %}
+        <li>{{ item.name }} - {{ item.description }} - <strong>created: {{ item.created_at }}</strong> </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
